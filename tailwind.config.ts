@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Old Money Wedding Colors
+				oldmoney: {
+					brown: '#8B4513',
+					cream: '#F5F5DC',
+					gold: '#DAA520',
+					charcoal: '#2F4F4F',
+					offwhite: '#FAF0E6'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-up': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(40px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-up': 'slide-up 0.8s ease-out'
+			},
+			fontFamily: {
+				'cormorant': ['Cormorant', 'serif'],
+				'opensans': ['Open Sans', 'sans-serif']
 			}
 		}
 	},
